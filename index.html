@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alsagoff LLC — Digital Marketing</title>
+  <meta name="description" content="Alsagoff LLC. Digital marketing services. Content, social, and commerce creative. Est. 2026.">
+  <link rel="canonical" href="https://alsagoffllc.com/">
+  <meta property="og:title" content="Alsagoff LLC">
+  <meta property="og:description" content="Digital marketing services. Est. 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alsagoffllc.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f3eee4;
+      --sky: #d6e8f7;
+      --ink: #1e2624;
+      --muted: #5c6763;
+      --rule: #cfc6b6;
+      --brass: #8a5a2b;
+      --brass-deep: #6e4520;
+      --white: #fffcf7;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Outfit, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+      text-wrap: pretty;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+    header.nav {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 0 20px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .mark {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    nav {
+      display: flex;
+      gap: 22px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    nav a { text-decoration: none; color: var(--muted); }
+    nav a:hover, nav a:focus-visible { color: var(--ink); }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 48px;
+      padding: 72px 0 80px;
+      align-items: end;
+    }
+    .kicker {
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--brass);
+      font-weight: 600;
+      margin: 0 0 18px;
+    }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(42px, 7vw, 88px);
+      font-weight: 400;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+    h1 em {
+      font-style: italic;
+      font-weight: 400;
+    }
+    .lede {
+      margin: 28px 0 0;
+      max-width: 34em;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .hero-aside {
+      background: var(--sky);
+      padding: 28px 28px 32px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .hero-aside p { margin: 0; color: var(--ink); }
+    .hero-aside .yr {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 40px;
+      line-height: 1;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 32px;
+      background: var(--ink);
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 18px;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      min-height: 44px;
+    }
+    .cta:hover, .cta:focus-visible { background: var(--brass-deep); }
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--rule); }
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 400;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 40px;
+      margin-bottom: 36px;
+      align-items: start;
+    }
+    .section-head p { margin: 6px 0 0; color: var(--muted); }
+    .idx {
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brass);
+      font-weight: 600;
+    }
+    .work {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-top: 1px solid var(--rule);
+    }
+    .work article {
+      display: grid;
+      grid-template-columns: 88px 1fr 1.2fr;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: start;
+    }
+    .work .num {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 28px;
+      color: var(--brass);
+    }
+    .work h3 {
+      margin: 0;
+      font-size: 22px;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 400;
+    }
+    .work p { margin: 0; color: var(--muted); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .pull {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 28px;
+      line-height: 1.25;
+      margin: 0;
+      font-style: italic;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 40px;
+      align-items: center;
+    }
+    .contact-row a {
+      color: var(--brass-deep);
+      font-weight: 500;
+    }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 0 48px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media (max-width: 820px) {
+      .hero, .section-head, .about-grid, .work article {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .hero { padding: 40px 0 48px; }
+      nav { display: none; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="mark" href="/">Alsagoff LLC</a>
+      <nav aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="kicker">Digital marketing services</p>
+        <h1 id="hero-title">Make the brand<br><em>show up</em> every day.</h1>
+        <p class="lede">Alsagoff LLC plans, writes, and ships the content that keeps pages, shops, and campaigns moving — without the filler.</p>
+        <a class="cta" href="#contact">Start a conversation</a>
+      </div>
+      <aside class="hero-aside">
+        <p class="yr">est. 2026</p>
+        <p>A small studio for social, commerce creative, and the sites that sit behind them.</p>
+      </aside>
+    </section>
+
+    <section id="work">
+      <div class="section-head">
+        <div>
+          <div class="idx">01 — Work</div>
+          <h2>What we actually do</h2>
+        </div>
+        <p>Not a catalogue of buzzwords. Three lines of work, done end to end.</p>
+      </div>
+      <div class="work">
+        <article>
+          <div class="num">01</div>
+          <h3>Social &amp; page growth</h3>
+          <p>Captions, stills, and short video that match the media. Scheduled posting, not dumps. Built for Facebook pages and shopper feeds that have to look native.</p>
+        </article>
+        <article>
+          <div class="num">02</div>
+          <h3>Commerce creative</h3>
+          <p>Product films, haul-style UGC, and editorial cards — face and voice when the platform needs it, watermarked and timed for the feed you are actually using.</p>
+        </article>
+        <article>
+          <div class="num">03</div>
+          <h3>Sites that hold the name</h3>
+          <p>A public face for the LLC: clear offer, real contact, no parking page. The domain should look like a firm, not a Canva draft.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head">
+        <div>
+          <div class="idx">02 — About</div>
+          <h2>About digital marketing services</h2>
+        </div>
+        <p></p>
+      </div>
+      <div class="about-grid">
+        <p class="pull">We treat publishing as operations: one image, one video, on the hour they were meant to go out.</p>
+        <div>
+          <p>Alsagoff LLC is a digital marketing practice established in 2026. The work sits at the overlap of content, commerce, and the systems that keep both running without babysitting.</p>
+          <p>If you need a campaign that looks expensive and still ships on a clock, that is the brief.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head">
+        <div>
+          <div class="idx">03 — Contact</div>
+          <h2>Write to the studio</h2>
+        </div>
+        <p>Tell us the page, the product, or the site. We will answer from the LLC.</p>
+      </div>
+      <div class="contact-row">
+        <a href="mailto:mahmoodalsagoff@gmail.com">mahmoodalsagoff@gmail.com</a>
+        <span>alsagoffllc.com</span>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Alsagoff LLC</span>
+      <span>Digital marketing</span>
+    </footer>
+  </div>
+</body>
+</html>
